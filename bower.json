@@ -1,0 +1,19 @@
+{
+  "name": "react-webpack",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pezza3434/React-WebPack",
+  "authors": [
+    "Alex Perry <alexperry2@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.3"
+  }
+}
