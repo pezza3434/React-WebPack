@@ -1,8 +1,8 @@
 var React = require('react');
-module.exports = React.createClass({
+export default React.createClass({
     render: function () {
         return (
-            <h1>Hello world! And this</h1>
+            <div>Hello World!</div>
         );
     }
 });

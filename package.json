@@ -10,8 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jsx-loader": "^0.13.2",
+    "react": "^0.14.2",
     "webpack": "^1.9.11",
     "webpack-dev-server": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-react": "^6.1.2",
+    "react-dom": "^0.14.2",
+    "webpack": "^1.12.2"
   }
 }

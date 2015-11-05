@@ -1,31 +1,21 @@
-var bower_dir = __dirname + '/bower_components';
-
 var config = {
-    addVendor: function (name, path) {
-        this.resolve.alias[name] = path;
-        this.module.noParse.push(new RegExp(path));
-    },
-    entry: ['./app/main.js'],
+    entry: [__dirname + '/app/main.js'],
     output: {
         path: './build',
         filename: 'bundle.js'
     },
 
-    resolve: {
-        alias: {
-            'react': bower_dir + '/react/react.min.js'
-        }
-    },
-
     module: {
-        noParse: [],
         loaders: [{
-            test: /\.js$/,
-            loader: 'jsx-loader'
+            test: /\.jsx?$/,
+            exclude: /(node_modules|bower_components)/,
+            loader: 'babel',
+            query: {
+                presets: ['es2015', 'react']
+            }
         }]
     }
 };
 
-config.addVendor('react', bower_dir + '/react/react.min.js');
 
 module.exports = config;
